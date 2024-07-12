@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uses of flexbox</title>
+
+  <script src="https://kit.fontawesome.com/bb64883375.js" crossorigin="anonymous"></script>
+
+  <style>
+    .login-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .login-form {
+      height: 300px;
+      padding: 30px;
+      border: 2px solid darkseagreen;
+      border-radius: 9px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form input,
+    button {
+      font-size: 1.3em;
+      border: 2px solid darkseagreen;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: darkseagreen;
+      color: darkgreen;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.3em;
+      margin-right: 20px;
+    }
+    .fa-circle-user{
+      font-size: 1.3em;
+    }
+    nav{
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span>
+        <a href="">Home</a>
+        <a href="">Products</a>
+        <a href="">Orders</a>
+        <a href="">About us</a>
+      </span>
+      <span>
+        <a href=""><i class="fa-solid fa-circle-user"></i></a>
+      </span>    
+    </nav>
+  </header>
+  <section class="login-container">
+    <form action="" class="login-form">
+      <h2>Login Form</h2>
+      <input type="email" name="email" id="" placeholder="your email">
+      <input type="password" name="password" id="" placeholder="your password">
+      <button type="submit">Login</button>
+    </form>
+  </section>
+</body>
+
+</html>

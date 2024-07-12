@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.btn {
+  width: 90px;
+  height: 40px;
+  margin: 50px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 1px 3px;
+  transition: all 0.5s ease;
+}
+.btn:hover {
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
+}
+img {
+  float: left;
+}
+p.clear {
+  clear: both;
+}
+.lineGradient {
+  width: 550px;
+  height: 150px;
+  background: linear-gradient(to left, red, yellow, green, blue);
+  background: -o-linear-gradient(left, red, yellow, green, blue);
+  background: -moz-linear-gradient(left, red, yellow, green, blue);
+  background: -webkit-linear-gradient(left, red, yellow, green, blue);
+  margin-left: 20px;
+}
+.redGradient {
+  width: 550px;
+  height: 150px;
+  background: radial-gradient(red 5%, yellow 50%, green 95%, blue 5%);
+  background: -o-radial-gradient(red 5%, yellow 50%, green 95%, blue 5%);
+  background: -moz-radial-gradient(red 5%, yellow 50%, green 95%, blue 5%);
+  background: -webkit-radial-gradient(red 5%, yellow 50%, green 95%, blue 5%);
+  margin-left: 20px;
+}
+.anime1 {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: 0 20px;
+  float: left;
+
+  -webkit-animation-name: ash;
+  animation-name: ash;
+
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+@-webkit-keyframes ash {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    border-radius: 50%;
+    background-color: coral;
+  }
+}
+@keyframes ash {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    border-radius: 50%;
+    background-color: coral;
+  }
+}
+.anime2 {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: 0 20px;
+  float: left;
+
+  -webkit-animation-name: ash2;
+  animation-name: ash2;
+
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+@-webkit-keyframes ash2 {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    width: 350px;
+    border-radius: 50%;
+    background-color: coral;
+  }
+}
+@keyframes ash2 {
+  from {
+    background-color: blueviolet;
+  }
+  to {
+    width: 350px;
+    border-radius: 50%;
+    background-color: coral;
+  }
+}
+.anime3 {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: 0 20px;
+
+  -webkit-animation-name: ash3;
+  animation-name: ash3;
+
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+  animation-direction: alternate-reverse;
+}
+@-webkit-keyframes ash3 {
+  0% {
+    margin-left: 50px;
+    background-color: red;
+  }
+  25% {
+    margin-left: 100px;
+    background-color: green;
+  }
+  45% {
+    margin-left: 150px;
+    background-color: blue;
+  }
+  70% {
+    margin-left: 200px;
+    background-color: yellow;
+  }
+  100% {
+    margin-left: 250px;
+    background-color: red;
+  }
+}
+@keyframes ash3 {
+  0% {
+    margin-left: 50px;
+    background-color: red;
+  }
+  25% {
+    margin-left: 100px;
+    background-color: green;
+  }
+  45% {
+    margin-left: 150px;
+    background-color: blue;
+  }
+  70% {
+    margin-left: 200px;
+    background-color: yellow;
+  }
+  100% {
+    margin-left: 250px;
+    background-color: red;
+  }
+}
+.anime4 {
+  width: 150px;
+  height: 150px;
+  background-color: cadetblue;
+  margin: 0 20px;
+  border-radius: 15px;
+  position: relative;
+
+  -webkit-animation-name: ash4;
+  animation-name: ash4;
+
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: 5;
+  /* animation-direction: alternate; */
+}
+/* @keyframes ash4 {
+  0% {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+  25% {
+    margin-left: 400px;
+    margin-top: 0px;
+  }
+  45% {
+    margin-left: 400px;
+    margin-top: 200px;
+  }
+  70% {
+    margin-left: 20px;
+    margin-top: 200px;
+  }
+  100% {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+} */
+.audio {
+  margin-left: 20px;
+  width: 530px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: blueviolet;
+}
+.video {
+  margin-left: 20px;
+  width: 550px;
+  border-radius: 15px;
+}
+.youtube {
+  margin-left: 20px;
+  width: 550px;
+  border-radius: 15px;
+}
+.myFrame {
+  margin-left: 20px;
+  width: 600px;
+  height: 400px;
+  border: 5px solid blueviolet;
+  border-radius: 10px;
+}
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+img {
+  width: 300px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+.box {
+  width: 300px;
+  float: left;
+  margin-right: 30px;
+}
+.noMargin {
+  margin-right: 0px;
+}
+.box > h1 {
+  font-family: "fjalla one";
+}
+.box > p {
+  text-align: justify;
+  margin: 10px 0 25px 0;
+}
+.box > a {
+  text-decoration: none;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  /* margin: 0 auto;
+  width: 90px; */
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.box > a:hover {
+  color: blueviolet;
+  background-color: white;
+  border: 2px solid blueviolet;
+  padding: 7px 12px;
+  border-radius: 5px;
+}
+.menu {
+  margin: 0px;
+  padding: 0px;
+}
+#nav {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  width: 960px;
+  margin: 0 auto;
+}
+#nav li {
+  list-style: none;
+  /* display: inline; */
+  float: left;
+  margin-right: 10px;
+}
+#nav li a {
+  padding: 10px;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  text-decoration: none;
+  color: blueviolet;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+#nav li a:hover {
+  background-color: blueviolet;
+  color: white;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Job Interview Survey Form</h1>
+    <p id="description">
+      Welcome! Please fill out the form to inform us about your skills and exprtise
+    </p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <legend>Enter your personal info:</legend>
+        <label for="name" id="name-label"
+          >Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label for="number" id="number-label"
+          >Age (18 ~ 70)
+          <input
+            type="number"
+            id="number"
+            min="18"
+            max="70"
+            placeholder="Enter your age"
+            required
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tell us your preferred job title</legend>
+        <label for="dropdown"
+          >
+          <select name="select" id="dropdown">
+            <option value="1">Select job title</option>
+            <option value="2">Front End</option>
+            <option value="3">Back End</option>
+            <option value="4">Full Stack</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Proficiency Level</legend>
+        <label>
+          <input class="inline" type="radio" name="level" value="intern" checked />
+          Intern
+        </label>
+        <label>
+          <input class="inline" type="radio" name="level" value="junior" />
+          Junior
+        </label>
+        <label>
+          <input class="inline" type="radio" name="level" value="intermediate" />
+          Intermediate
+        </label>
+        <label>
+          <input class="inline" type="radio" name="level" value="expert" />
+          Expert
+        </label>
+      </fieldset>
+
+      <fieldset id="skills">
+        <legend>Technical Skills</legend>
+        <label
+          ><input class="inline" type="checkbox" name="skill" value="1" checked />Html &
+          CSS</label
+        ><label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="2"
+          />C/C++</label
+        ><label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="3"
+          />Javascript</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="4"
+          />Python</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="5"
+          />MySQL/ MongoDB</label
+          >
+          <label
+            ><input
+              class="inline"
+              type="checkbox"
+              name="skill"
+              value="6"
+            />React/ Vue/ Angular</label
+          >
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="7"
+          />Django/ Flask</label
+        >
+        <label
+          ><input
+            class="inline"
+            type="checkbox"
+            name="skill"
+            value="8"
+          />Tailwind/ Bootstrap</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Anything else you want to add</legend>
+        <textarea
+          name="comment"
+          id="textarea"
+          rows="5"
+          placeholder="Enter your information here..."
+        ></textarea>
+      </fieldset>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

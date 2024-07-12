@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Bootstrap leaderboard</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    /* body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    } */
+
+    .pry-color {
+      color: #562eff;
+    }
+
+    .pry-bg-color {
+      background-color: #562eff;
+    }
+  </style>
+</head>
+
+<body class="bg-secondary-subtle">
+  <header>
+    <nav class="navbar navbar-expand-lg pry-bg-color" data-bs-theme="dark">
+      <div class="container ps-0 pe-0">
+        <a class="navbar-brand fw-semibold d-flex align-items-center" href="#">
+          <img src="./images/logo-1.1.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
+          <span class="ps-3">LeadBoard</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          style="background-color: #ffffff70;" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold pe-4">
+            <li class="nav-item pe-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <a class="navbar-brand fw-semibold me-0" href="#">
+            <img src="./images/profile.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
+            <!-- Profile -->
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <h1 class="text-center">Bootstrap Responsive leaderboard website</h1> -->
+    <section class="container bg-white border border-1 shadow-sm mt-3 rounded-4">
+      <div class="p-4">
+        <h3 class="fs-3 pry-color mb-5">Top players</h3>
+        <div class="row">
+          <div class="col col-lg-4 col-md-6 col-sm-6 col-12 p-3">
+            <img src="./images/players/player-1.png" alt="player number 1" width="70" height="70">
+            <span class="fs-5 fw-bold ps-3">John Smith</span>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-6 col-12 p-3">
+            <img src="./images/players/player-2.png" alt="player number 1" width="70" height="70">
+            <span class="fs-5 fw-bold ps-3">Johny Jimy</span>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-6 col-12 p-3">
+            <img src="./images/players/player-3.png" alt="player number 1" width="70" height="70">
+            <span class="fs-5 fw-bold ps-3">Cody Lee jr</span>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-6 col-12 p-3">
+            <img src="./images/players/player-4.png" alt="player number 1" width="70" height="70">
+            <span class="fs-5 fw-bold ps-3">Cody Lee jr</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
