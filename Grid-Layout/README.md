@@ -45,15 +45,10 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+From doing this project I learned how to work with css grid layout and some of its features like grid-template-columns, grid-column, grid-row-start, grid-column-start, grid-template-areas and more.
 
 To see how you can add code snippets, see below:
 
