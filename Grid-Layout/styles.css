@@ -159,6 +159,7 @@ h2 {
     'two five'
     'three five'
     'four four';
+    padding-inline: 0;
   }
 }
 @media screen and (min-width: 996px) {
@@ -166,5 +167,6 @@ h2 {
     grid-template-areas: 
     'one one two five'
     'three four four five';
+    padding-inline: 0;
   }
 }
