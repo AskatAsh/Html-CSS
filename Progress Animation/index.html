@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Animation</title>
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        .container{
+            background-color: whitesmoke;
+            max-width: 500px;
+            width: 90%;
+            height: 40px;
+            margin-inline: auto;
+            border: 1px solid #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 50%;
+            transform: translateY(-50%);
+        }
+        .container .skill{
+            font-size: 18px;
+            font-weight: 700;
+            color: #555;
+            position: relative;
+        }
+        .skill::before{
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            border-radius: 50px;
+            width: 100%;
+            height: 15px;
+            background-color: #e6e6e6;
+        }
+        .skill::after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 0;
+            border-radius: 50px;
+            width: 0;
+            height: 15px;
+            background-color: lightsalmon;
+            animation-name: skill;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: 3; */
+            animation-fill-mode: forwards;
+        }
+        @keyframes skill {
+            to{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="skill">Skill</div>
+    </div>
+</body>
+</html>
